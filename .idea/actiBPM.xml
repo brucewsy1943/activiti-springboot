@@ -10,8 +10,5 @@
     <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/variable.bpmn">
       <view grid="false" />
     </stateFile>
-    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/variable.bpmn">
-      <view grid="false" />
-    </stateFile>
   </component>
 </project>

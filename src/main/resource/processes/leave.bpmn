@@ -2,11 +2,11 @@
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.activiti.org/testm1539766523202" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.w3.org/1999/XPath" id="m1539766523202" name="" targetNamespace="http://www.activiti.org/testm1539766523202" typeLanguage="http://www.w3.org/2001/XMLSchema">
   <process id="myProcess" isClosed="false" isExecutable="true" name="my process" processType="None">
     <startEvent id="startevent1" name="start"/>
-    <userTask activiti:assignee="寮犱笁" activiti:exclusive="true" id="usertask1" name="鎻愪氦鐢宠"/>
+    <userTask activiti:assignee="瀵姳绗�" activiti:exclusive="true" id="usertask1" name="閹绘劒姘﹂悽瀹狀嚞"/>
     <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="usertask1"/>
-    <userTask activiti:assignee="鏉庡洓" activiti:exclusive="true" id="usertask2" name="瀹℃壒銆愰儴闂ㄧ粡鐞嗐��"/>
+    <userTask activiti:assignee="閺夊骸娲�" activiti:exclusive="true" id="usertask2" name="鐎光剝澹掗妴鎰板劥闂傘劎绮￠悶鍡愶拷锟�"/>
     <sequenceFlow id="flow2" sourceRef="usertask1" targetRef="usertask2"/>
-    <userTask activiti:assignee="鐜嬩簲" activiti:exclusive="true" id="usertask3" name="瀹℃壒鎬荤粡鐞�"/>
+    <userTask activiti:assignee="閻滃绨�" activiti:exclusive="true" id="usertask3" name="鐎光剝澹掗幀鑽ょ病閻烇拷"/>
     <sequenceFlow id="flow3" sourceRef="usertask2" targetRef="usertask3"/>
     <endEvent id="endevent1" name="end"/>
     <sequenceFlow id="flow4" sourceRef="usertask3" targetRef="endevent1"/>

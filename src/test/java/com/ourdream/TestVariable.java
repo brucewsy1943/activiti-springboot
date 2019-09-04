@@ -55,7 +55,7 @@ public class TestVariable {
         //指定办理人
         String assignee = "张三";//注意 这个地方 是在流程中指定的人
 
-        String processInstanceId = "27501";
+        String processInstanceId = "42501";
 
         Task task = taskService.createTaskQuery()
                       .taskAssignee(assignee)
@@ -69,5 +69,11 @@ public class TestVariable {
         Person p = new Person(1,"翠湖");
 
         taskService.setVariable(task.getId(),"人员信息",p);
+    }
+
+    @Test
+    public void getVariables(){
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        TaskService taskService = processEngine.getTaskService();
     }
 }
