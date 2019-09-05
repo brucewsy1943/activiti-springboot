@@ -16,7 +16,7 @@ import java.io.InputStream;
 import java.util.Date;
 
 /**
- *带流程变量
+ *带流程变量---流程变量获取
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MyApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

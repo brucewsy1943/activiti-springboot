@@ -22,6 +22,23 @@ import java.util.List;
 public class TestBase
 {
 
+
+    /**
+     * 部署
+     */
+    @Test
+    public void deploy(){
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+
+        Deployment deployment = processEngine.getRepositoryService()
+                .createDeployment()
+                .addClasspathResource("processes/leave.bpmn")
+                .deploy();
+        //.addClasspathResource("processes/iot_order.png")
+
+        System.out.println(deployment.getId()+"          " + deployment.getName() + "          " + deployment.getKey());//12505          null
+    }
+
     /**
      * 启动
      */
@@ -34,21 +51,6 @@ public class TestBase
 
 
 
-    /**
-     * 部署
-     */
-    @Test
-    public void deploy(){
-        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-
-        Deployment deployment = processEngine.getRepositoryService()
-                                            .createDeployment()
-                                            .addClasspathResource("processes/leave.bpmn")
-                                            .deploy();
-                                            //.addClasspathResource("processes/iot_order.png")
-
-        System.out.println(deployment.getId()+"          " + deployment.getName() + "          " + deployment.getKey());//12505          null
-    }
 
     /**
      * 查看个人任务 act_ru_task---实时性的
