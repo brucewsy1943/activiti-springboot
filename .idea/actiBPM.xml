@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BPMNEditorStateService">
-    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/leave.bpmn">
+    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/choice.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/parallel.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/para.bpmn">
       <view grid="false" />
     </stateFile>
     <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/variable.bpmn">
       <view grid="false" />
     </stateFile>
-    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/variable.bpmn">
+    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/parallel.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resource/processes/paralell.bpmn">
       <view grid="false" />
     </stateFile>
   </component>

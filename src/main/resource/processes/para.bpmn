@@ -3,14 +3,14 @@
   <process id="pp" isClosed="false" isExecutable="true" processType="None">
     <startEvent id="_2" name="StartEvent"/>
     <parallelGateway gatewayDirection="Unspecified" id="_3" name="ParallelGateway"/>
-    <userTask activiti:exclusive="true" id="_4" name="付款"/>
-    <userTask activiti:exclusive="true" id="_5" name="发货"/>
+    <userTask activiti:assignee="客户" activiti:exclusive="true" id="_4" name="付款"/>
+    <userTask activiti:assignee="商家" activiti:exclusive="true" id="_5" name="发货"/>
     <sequenceFlow id="_6" sourceRef="_2" targetRef="_3"/>
     <sequenceFlow id="_7" sourceRef="_3" targetRef="_4"/>
     <sequenceFlow id="_8" sourceRef="_3" targetRef="_5"/>
-    <userTask activiti:exclusive="true" id="_9" name="收款"/>
+    <userTask activiti:assignee="商家" activiti:exclusive="true" id="_9" name="收款"/>
     <sequenceFlow id="_10" sourceRef="_4" targetRef="_9"/>
-    <userTask activiti:exclusive="true" id="_11" name="收货"/>
+    <userTask activiti:assignee="客户" activiti:exclusive="true" id="_11" name="收货"/>
     <sequenceFlow id="_12" sourceRef="_5" targetRef="_11"/>
     <parallelGateway gatewayDirection="Unspecified" id="_13" name="ParallelGateway"/>
     <sequenceFlow id="_14" sourceRef="_9" targetRef="_13"/>
